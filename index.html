@@ -68,6 +68,32 @@
   .oa-logo {
     max-height: 56px;
   }
+/* ALLIANCE LOGOS */
+.alliance-logo {
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.alliance-logo img {
+  max-height: 64px;
+  max-width: 160px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.1);
+}
+
+.alliance-logo:hover {
+  opacity: 1;
+}
+
+.alliance-logo:hover img {
+  filter: grayscale(0%);
+}
+
+/* PRIMARY ALLIANCE (TOP) */
+.primary-alliance img {
+  max-height: 90px;
+  max-width: 220px;
+  filter: grayscale(0%);
 }
 </style>
 </head>
@@ -211,13 +237,33 @@
     The Alliance
   </h2>
 
-  <div class="flex flex-wrap justify-center gap-12 mb-16 text-xl opacity-80">
-    <span>HODOPHILES</span>
-    <span>MOUNTAIN MEETS SEA</span>
-    <span>YOUNG WIND</span>
-    <span>CLOUDFARM</span>
-    <span>EKANTHALA</span>
+<div class="mb-16">
+
+  <!-- PRIMARY ALLIANCE (TOP, CENTER) -->
+  <div class="flex justify-center mb-12">
+    <div class="alliance-logo primary-alliance">
+      <img src="logos/Mountain-Meets-Sea.png" alt="Mountain Meets Sea Logo">
+    </div>
   </div>
+
+  <!-- SECONDARY ALLIANCES (ONE LINE) -->
+  <div class="flex flex-wrap justify-center gap-12">
+    <div class="alliance-logo">
+      <img src="logos/hodophiles.png" alt="Hodophiles Logo">
+    </div>
+
+    <div class="alliance-logo">
+      <img src="logos/youngwind.png" alt="Young Wind Logo">
+    </div>
+
+    <div class="alliance-logo">
+      <img src="logos/tour de south.png" alt="Tour De South Logo">
+    </div>
+  </div>
+
+</div>
+
+
 
   <!-- ALLIANCE CODE -->
   <div class="max-w-4xl mx-auto text-left">
@@ -234,7 +280,7 @@
       <strong>The Zero-Trace Standard:</strong> In partnership with Mountain
       Meets Sea, every trek follows strict Leave No Trace protocols.<br><br>
       <strong>Community-Led Conservation:</strong> By partnering with
-      Cloudfarm and Ekanthala, a portion of every journey directly supports
+      Tour De South, a portion of every journey directly supports
       local conservation and community programs.
       <br><br>
       <em>We leave only a wake behind our hulls and take only memories from the
@@ -264,7 +310,6 @@
 
 </body>
 </html>
-
 
 
 
