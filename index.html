@@ -64,8 +64,13 @@
     }
     @media (max-width: 768px) {
   .oa-logo {
-    height: 60px;
-  }
+  max-height: 72px;        /* DO NOT exceed this */
+  width: auto;
+  object-fit: contain;
+
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+}
+
 }
   </style>
 </head>
@@ -84,7 +89,7 @@
 
 
  <a href="index.html" class="flex items-center space-x-3">
-  <div class="space-x-6 hidden md:flex">
+<div class="space-x-6 hidden md:flex items-center whitespace-nowrap">
     <a href="Wind & Water.html" class="hover:text-blue-400">Wind & Water</a>
     <a href="Earth.html" class="hover:text-green-400">Earth</a>
     <a href="Velocity.html" class="hover:text-red-400">Velocity</a>
@@ -97,7 +102,7 @@
 
 
 <!-- HERO -->
-<header class="hero h-screen flex flex-col justify-center items-center text-center px-6">
+<header class="hero pt-32 h-screen flex flex-col justify-center items-center text-center">
   <h1 class="text-5xl md:text-7xl font-extrabold uppercase mb-6">
     Mastering the Elements
   </h1>
@@ -261,6 +266,7 @@
 
 </body>
 </html>
+
 
 
 
