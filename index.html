@@ -13,10 +13,29 @@
 }
 
 .oa-logo {
-  height: 250px;
-  width: auto;
-  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+ /* BRAND TEXT NEXT TO LOGO */
+.brand-text {
+  margin-left: 14px;
+
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  /* IMAGE INSIDE TEXT */
+  background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* subtle depth */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.45);
 }
+
 
 
 .oa-logo:hover {
@@ -54,10 +73,16 @@
 <body class="bg-gray-900 text-white font-sans">
 
 <!-- NAVIGATION -->
-<nav class="bg-black/30 py-6 px-8 flex justify-between items-center sticky top-0 z-50">
-  <div class="logo-wrap">
+<nav class="bg-black/70 backdrop-blur-md h-20 px-8 flex items-center justify-between sticky top-0 z-50">
+<div class="logo-wrap">
   <img src="logo.png" alt="Outbound Alliance Logo" class="oa-logo">
+
+  <span class="brand-text">
+    OUTBOUND&nbsp;ALLIANCE
+  </span>
 </div>
+
+
  <a href="index.html" class="flex items-center space-x-3">
   <div class="space-x-6 hidden md:flex">
     <a href="Wind & Water.html" class="hover:text-blue-400">Wind & Water</a>
@@ -236,6 +261,7 @@
 
 </body>
 </html>
+
 
 
 
