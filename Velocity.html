@@ -1,89 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velocity | Outbound Alliance</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velocity | Outbound Alliance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* BRAND */
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .oa-logo {
+      max-height: 56px;
+      width: auto;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+    }
+
+    .brand-text {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      background-image: linear-gradient(
+        90deg,
+        #ff9933,
+        #ffffff,
+        #138808
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+
+      text-shadow: 0 2px 4px rgba(0,0,0,0.45);
+    }
+
+    @media (max-width: 768px) {
+      .brand-text { font-size: 16px; }
+      .oa-logo { max-height: 48px; }
+    }
+  </style>
 </head>
 
 <body class="bg-gray-900 text-white">
-<nav class="bg-black/70 backdrop-blur-md h-24 px-8 flex items-center justify-between sticky top-0 z-50">
 
-  <!-- BRAND -->
- <a href="index.html" class="logo-wrap hover:opacity-90 transition">
-  <img src="logo.png" alt="Outbound Alliance Logo" class="oa-logo">
-  <span class="brand-text">OUTBOUND&nbsp;ALLIANCE</span>
-</a>
-
-
-  <!-- MENU -->
-  <div class="space-x-6 hidden md:flex items-center whitespace-nowrap">
-    <a href="Wind & Water.html" class="text-blue-400 hover:text-blue-300 transition">Wind & Water</a>
-    <a href="Earth.html" class="text-green-400 hover:text-green-300 transition">Earth</a>
-    <a href="Velocity.html" class="text-red-300 font-semibold underline underline-offset-8">Velocity</a>
-    <a href="The Alliance.html" class="text-gray-200 hover:text-white transition">The Alliance</a>
-    <a href="contact.html"
-       class="border border-white/30 px-4 py-2 rounded-lg hover:bg-white hover:text-black transition">
-      Join
-    </a>
-  </div>
-
-</nav>
-
-
-<section class="py-24 px-10 text-center">
-  <h1 class="text-5xl font-bold mb-6">Velocity</h1>
-  <p class="max-w-3xl mx-auto text-gray-300 italic">
-    Terrain-driven motorcycle and cycling expeditions led by Hodophiles.
-  </p>
-</section>
-
-<section class="grid md:grid-cols-2 gap-10 px-10 pb-20">
-  <div class="border border-red-500 p-8 rounded-xl">
-    <h2 class="text-2xl font-bold mb-3">Motorcycle Expeditions</h2>
-    <p class="text-gray-300">Long-distance routes across coastlines, ghats, and plateaus.</p>
-  </div>
-  <div class="border border-red-500 p-8 rounded-xl">
-    <h2 class="text-2xl font-bold mb-3">Cycling Journeys</h2>
-    <p class="text-gray-300">Pedal-powered exploration emphasizing endurance and connection.</p>
-  </div>
-</section>
-
-<section class="bg-green-700 p-10 mx-10 rounded-xl text-center mb-20">
-  <h3 class="text-2xl font-bold mb-2">The Green Footprint of This Journey</h3>
-  <p class="italic">
-    Human-powered movement minimizes environmental impact while maximizing connection.
-  </p>
-</section>
-
-</body>
-</html>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velocity | Outbound Alliance</title>
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="bg-gray-900 text-white">
+<!-- NAVBAR -->
 <nav class="bg-black/70 backdrop-blur-md h-20 px-8 flex items-center justify-between sticky top-0 z-50">
 
-  <!-- BRAND (HOME BUTTON) -->
   <a href="index.html" class="logo-wrap hover:opacity-90 transition">
     <img src="logo.png" alt="Outbound Alliance Logo" class="oa-logo">
     <span class="brand-text">OUTBOUND&nbsp;ALLIANCE</span>
   </a>
 
-  <!-- MENU -->
   <div class="space-x-6 hidden md:flex items-center whitespace-nowrap">
-    <a href="Wind & Water.html" class="hover:text-gray-200">Wind & Water</a>
-    <a href="Earth.html" class="hover:text-gray-200">Earth</a>
-    <a href="Velocity.html" class="text-red-400 font-semibold">Velocity</a>
-    <a href="The Alliance.html" class="hover:text-gray-200">The Alliance</a>
+    <a href="Wind & Water.html" class="text-blue-400 hover:text-blue-300">Wind & Water</a>
+    <a href="Earth.html" class="text-green-400 hover:text-green-300">Earth</a>
+    <a href="Velocity.html" class="text-red-300 font-semibold underline underline-offset-8">Velocity</a>
+    <a href="The Alliance.html" class="text-gray-200 hover:text-white">The Alliance</a>
     <a href="contact.html"
        class="border border-white/30 px-4 py-2 rounded-lg hover:bg-white hover:text-black transition">
       Join
@@ -92,35 +70,26 @@
 
 </nav>
 
-
-
-<section class="py-24 px-10 text-center">
+<!-- HERO -->
+<section class="pt-32 pb-24 px-10 text-center">
   <h1 class="text-5xl font-bold mb-6">Velocity</h1>
   <p class="max-w-3xl mx-auto text-gray-300 italic">
     Terrain-driven motorcycle and cycling expeditions led by Hodophiles.
   </p>
 </section>
 
+<!-- CONTENT -->
 <section class="grid md:grid-cols-2 gap-10 px-10 pb-20">
   <div class="border border-red-500 p-8 rounded-xl">
     <h2 class="text-2xl font-bold mb-3">Motorcycle Expeditions</h2>
     <p class="text-gray-300">Long-distance routes across coastlines, ghats, and plateaus.</p>
   </div>
+
   <div class="border border-red-500 p-8 rounded-xl">
     <h2 class="text-2xl font-bold mb-3">Cycling Journeys</h2>
     <p class="text-gray-300">Pedal-powered exploration emphasizing endurance and connection.</p>
   </div>
 </section>
 
-<section class="bg-green-700 p-10 mx-10 rounded-xl text-center mb-20">
-  <h3 class="text-2xl font-bold mb-2">The Green Footprint of This Journey</h3>
-  <p class="italic">
-    Human-powered movement minimizes environmental impact while maximizing connection.
-  </p>
-</section>
-
-</body>
-</html>
-
-
-
+<!-- SUSTAINABILITY -->
+<section
