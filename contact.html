@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+/* BRAND WRAP */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* LOGO IMAGE */
+.oa-logo {
+  max-height: 56px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+}
+
+/* BRAND TEXT */
+.brand-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  background-image: linear-gradient(
+    90deg,
+    #ff9933,
+    #ffffff,
+    #138808
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow: 0 2px 4px rgba(0,0,0,0.45);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .brand-text {
+    font-size: 16px;
+  }
+  .oa-logo {
+    max-height: 48px;
+  }
+}
+</style>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Join | Outbound Alliance</title>
@@ -45,5 +93,6 @@
 
 </body>
 </html>
+
 
 
