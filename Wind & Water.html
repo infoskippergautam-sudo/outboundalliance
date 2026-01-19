@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+/* BRAND WRAP */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* LOGO IMAGE */
+.oa-logo {
+  max-height: 56px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+}
+
+/* BRAND TEXT */
+.brand-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  background-image: linear-gradient(
+    90deg,
+    #ff9933,
+    #ffffff,
+    #138808
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow: 0 2px 4px rgba(0,0,0,0.45);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .brand-text {
+    font-size: 16px;
+  }
+  .oa-logo {
+    max-height: 48px;
+  }
+}
+</style>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wind & Water | Outbound Alliance</title>
@@ -9,21 +57,28 @@
 
 <body class="bg-gray-900 text-white">
 
-<nav class="bg-black/80 p-6 flex justify-between items-center sticky top-0 z-50">
-  <a href="index.html" class="text-2xl font-bold tracking-tight text-blue-400">
-    OUTBOUND ALLIANCE
+<nav class="bg-black/70 backdrop-blur-md h-20 px-8 flex items-center justify-between sticky top-0 z-50">
 
+  <!-- BRAND (HOME BUTTON) -->
+  <a href="index.html" class="logo-wrap hover:opacity-90 transition">
+    <img src="logo.png" alt="Outbound Alliance Logo" class="oa-logo">
+    <span class="brand-text">OUTBOUND&nbsp;ALLIANCE</span>
   </a>
-  <div class="space-x-6 hidden md:flex">
-    <a href="Wind & Water.html" class="hover:text-blue-400">Wind & Water</a>
-    <a href="Earth.html" class="hover:text-green-400">Earth</a>
-    <a href="Velocity.html" class="hover:text-red-400">Velocity</a>
-    <a href="The Alliance.html" class="hover:text-gray-300">The Alliance</a>
-    <a href="contact.html" class="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700">
+
+  <!-- MENU -->
+  <div class="space-x-6 hidden md:flex items-center whitespace-nowrap">
+    <a href="Wind & Water.html" class="hover:text-gray-200">Wind & Water</a>
+    <a href="Earth.html" class="hover:text-gray-200">Earth</a>
+    <a href="Velocity.html" class="text-red-400 font-semibold">Velocity</a>
+    <a href="The Alliance.html" class="hover:text-gray-200">The Alliance</a>
+    <a href="contact.html"
+       class="border border-white/30 px-4 py-2 rounded-lg hover:bg-white hover:text-black transition">
       Join
     </a>
   </div>
+
 </nav>
+
 
 
 <section class="py-24 px-10 text-center">
@@ -57,3 +112,4 @@
 
 </body>
 </html>
+
