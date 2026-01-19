@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+/* BRAND WRAP */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* LOGO IMAGE */
+.oa-logo {
+  max-height: 56px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+}
+
+/* BRAND TEXT */
+.brand-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  background-image: linear-gradient(
+    90deg,
+    #ff9933,
+    #ffffff,
+    #138808
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow: 0 2px 4px rgba(0,0,0,0.45);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .brand-text {
+    font-size: 16px;
+  }
+  .oa-logo {
+    max-height: 48px;
+  }
+}
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Alliance | Outbound Alliance</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+<nav class="bg-black/70 backdrop-blur-md h-24 px-8 flex items-center justify-between sticky top-0 z-50">
+
+  <!-- BRAND -->
+ <a href="index.html" class="logo-wrap hover:opacity-90 transition">
+  <img src="logo.png" alt="Outbound Alliance Logo" class="oa-logo">
+  <span class="brand-text">OUTBOUND&nbsp;ALLIANCE</span>
+</a>
+
+
+  <!-- MENU -->
+  <div class="space-x-6 hidden md:flex items-center whitespace-nowrap">
+    <a href="Wind & Water.html" class="text-blue-400 hover:text-blue-300 transition">Wind & Water</a>
+    <a href="Earth.html" class="text-green-400 hover:text-green-300 transition">Earth</a>
+    <a href="Velocity.html" class="text-red-400 hover:text-red-300 transition">Velocity</a>
+    <a href="The Alliance.html" class="text-white font-semibold underline underline-offset-8">The Alliance</a>
+    <a href="contact.html"
+       class="border border-white/30 px-4 py-2 rounded-lg hover:bg-white hover:text-black transition">
+      Join
+    </a>
+  </div>
+
+</nav>
+
+
+
+<section id="alliance" class="py-20 px-10">
+  <h2 class="text-3xl font-bold text-center mb-12 uppercase tracking-widest">
+    The Alliance
+  </h2>
+
+<div class="mb-16">
+
+  <!-- PRIMARY ALLIANCE (TOP, CENTER) -->
+  <div class="flex justify-center mb-12">
+    <div class="alliance-logo primary-alliance">
+      <img src="logos/Mountain-Meets-Sea.png" alt="Mountain Meets Sea Logo">
+    </div>
+  </div>
+
+  <!-- SECONDARY ALLIANCES (ONE LINE) -->
+  <div class="flex flex-wrap justify-center gap-12">
+    <div class="alliance-logo">
+      <img src="logos/hodophiles.png" alt="Hodophiles Logo">
+    </div>
+
+    <div class="alliance-logo">
+      <img src="logos/youngwind.png" alt="Young Wind Logo">
+    </div>
+
+    <div class="alliance-logo">
+      <img src="logos/tour de south.png" alt="Tour De South Logo">
+    </div>
+  </div>
+
+</div>
+
+
+
+  <!-- ALLIANCE CODE -->
+  <div class="max-w-4xl mx-auto text-left">
+    <h3 class="text-2xl font-bold mb-4">The Alliance Code</h3>
+    <p class="text-gray-300 leading-relaxed">
+      <strong>Mastering the Elements, Preserving the Playground.</strong><br><br>
+      At Outbound Alliance, we believe the thrill of the sail, the grit of the
+      climb, and the speed of the ride are only possible if we protect the
+      elements that provide them. We don’t just visit these places — we are
+      their stewards.
+      <br><br>
+      <strong>Wind & Pedal Power:</strong> We prioritize movement that works
+      with nature, not against it.<br><br>
+      <strong>The Zero-Trace Standard:</strong> In partnership with Mountain
+      Meets Sea, every trek follows strict Leave No Trace protocols.<br><br>
+      <strong>Community-Led Conservation:</strong> By partnering with
+      Tour De South, a portion of every journey directly supports
+      local conservation and community programs.
+      <br><br>
+      <em>We leave only a wake behind our hulls and take only memories from the
+      summits.</em>
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+

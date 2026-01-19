@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+/* BRAND WRAP */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* LOGO IMAGE */
+.oa-logo {
+  max-height: 56px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+}
+
+/* BRAND TEXT */
+.brand-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  background-image: linear-gradient(
+    90deg,
+    #ff9933,
+    #ffffff,
+    #138808
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow: 0 2px 4px rgba(0,0,0,0.45);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .brand-text {
+    font-size: 16px;
+  }
+  .oa-logo {
+    max-height: 48px;
+  }
+}
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join | Outbound Alliance</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+<nav class="bg-black/70 backdrop-blur-md h-24 px-8 flex items-center justify-between sticky top-0 z-50">
+
+  <!-- BRAND -->
+ <a href="index.html" class="logo-wrap hover:opacity-90 transition">
+  <img src="logo.png" alt="Outbound Alliance Logo" class="oa-logo">
+  <span class="brand-text">OUTBOUND&nbsp;ALLIANCE</span>
+</a>
+
+
+  <!-- MENU -->
+  <div class="space-x-6 hidden md:flex items-center whitespace-nowrap">
+    <a href="wind-water.html" class="text-blue-400 hover:text-blue-300 transition">Wind & Water</a>
+    <a href="earth.html" class="text-green-400 hover:text-green-300 transition">Earth</a>
+    <a href="velocity.html" class="text-red-400 hover:text-red-300 transition">Velocity</a>
+    <a href="alliance.html" class="text-gray-200 hover:text-white transition">The Alliance</a>
+    <a href="contact.html"
+       class="border border-white/30 px-4 py-2 rounded-lg hover:bg-white hover:text-black transition">
+      Join
+    </a>
+  </div>
+
+</nav>
+
+<section class="py-32 px-10 text-center">
+  <h1 class="text-5xl font-bold mb-6">Join the Alliance</h1>
+  <p class="text-gray-400 mb-10">
+    Explore journeys, collaborate, or become part of the collective.
+  </p>
+
+  <a href="https://wa.me/916361603846"
+     class="bg-green-500 px-10 py-4 rounded-full font-bold hover:bg-green-600">
+     Contact on WhatsApp
+  </a>
+</section>
+
+</body>
+</html>
+
+
+
+
+
